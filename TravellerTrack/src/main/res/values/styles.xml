@@ -1,0 +1,81 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>;
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@color/color_status_bar</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="text_small">
+        <item name="android:textColor">@color/light_gray</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:shadowColor">#88000000</item>
+    </style>
+
+    <style name="text_medium">
+        <item name="android:textColor">@color/light_gray</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:shadowColor">#88000000</item>
+    </style>
+
+    <style name="text_title">
+        <item name="android:textColor">@color/light_gray</item>
+        <item name="android:textSize">24dp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:shadowColor">#88000000</item>
+    </style>
+
+    <style name="app_button">
+        <item name="android:background">@drawable/button_primary</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="dialog_title_text">
+        <item name="android:textColor">@color/color_app_text</item>
+        <item name="android:textSize">@dimen/large</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="dialog_message_text">
+        <item name="android:textColor">@color/color_app_text</item>
+        <item name="android:textSize">@dimen/medium</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text_medium_blue"></style>
+
+    <style name="style_text_input">
+        <item name="android:textColor">@color/LightGray</item>
+        <item name="android:textColorHint">@color/LightGray</item>
+        <item name="android:textSize">12dp</item>
+        <item name="colorControlNormal">@color/Red</item>
+        <item name="colorControlActivated">@color/Red</item>
+        <item name="colorControlHighlight">@color/Red</item>
+    </style>
+
+    <style name="AlertDialogCustom" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="colorControlNormal">@color/app_theme_color</item>
+        <item name="colorControlActivated">@color/app_theme_color</item>
+        <item name="colorPrimaryDark">@color/app_theme_color</item>>
+    </style>
+
+    <style name="style_app_edit_text_with_text_input" parent="@style/text_medium">
+        <item name="android:singleLine">true</item>
+    </style>
+
+</resources>

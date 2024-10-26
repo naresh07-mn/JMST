@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "792562955192",
+    "firebase_url": "https://traveltrack-46aaa.firebaseio.com",
+    "project_id": "traveltrack-46aaa",
+    "storage_bucket": "traveltrack-46aaa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:792562955192:android:fe970337a6f48c9a74154d",
+        "android_client_info": {
+          "package_name": "com.travel_track.solution"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "792562955192-dvdac7v064g68rs4tnpmhm8rif8sptpt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.travel_track.solution",
+            "certificate_hash": "603f350eef64317d7d34555a8655b85475ad9e3b"
+          }
+        },
+        {
+          "client_id": "792562955192-ln0ivle9ql4f7k9hu9qojuqgeoi6mim2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvb1WV0cqDLnVDX0rB8HA5qwt5fDV1dXo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "792562955192-ln0ivle9ql4f7k9hu9qojuqgeoi6mim2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

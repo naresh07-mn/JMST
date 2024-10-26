@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_theme_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/app_color_black"
+        android:gravity="left|center">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="@string/booking_info_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/medium" />
+
+        <ImageView
+            android:id="@+id/travel_track_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/travel_track" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimary" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="left|center"
+                    android:text="Booking ID"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/app_color_black" />
+
+                <View
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent"
+                    android:background="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/booking_id_value"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="left|center"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:textColor="@color/app_color_black" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimary" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="left|center"
+                    android:text="Duty Slip NO"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/app_color_black" />
+
+                <View
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent"
+                    android:background="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/duty_slip_no_value"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="left|center"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:textColor="@color/app_color_black" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimary" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="left|center"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:text="Passenger Name"
+                    android:textColor="@color/app_color_black" />
+
+                <View
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent"
+                    android:background="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/passenger_name_value"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="left|center"
+                    android:textStyle="bold"
+                    android:text=""
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/app_color_black" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@color/colorPrimary" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:textStyle="bold"
+                    android:gravity="left|center"
+                    android:text="Corporate Name"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/app_color_black" />
+
+                <View
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent"
+                    android:background="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/corporate_name_value"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:textStyle="bold"
+                    android:gravity="left|center"
+                    android:text=""
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/app_color_black" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimary" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:textStyle="bold"
+                    android:gravity="left|center"
+                    android:text="Mobile Number"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/app_color_black" />
+
+                <View
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent"
+                    android:background="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/mobile_number_value"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:textStyle="bold"
+                    android:gravity="left|center"
+                    android:text=""
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/app_color_black" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimary" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="left|center"
+                    android:textStyle="bold"
+                    android:text="Pickup Location"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/app_color_black" />
+
+                <View
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent"
+                    android:background="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/pickup_location_value"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="left|center"
+                    android:textStyle="bold"
+                    android:text=""
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/app_color_black" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimary" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="left|center"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:text="Pickup Date and Time"
+                    android:textColor="@color/app_color_black" />
+
+                <View
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent"
+                    android:background="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/pickup_date_time_value"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="left|center"
+                    android:textStyle="bold"
+                    android:text=""
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/app_color_black" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimary" />
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="left|center"
+                    android:textStyle="bold"
+                    android:text="Drop Location"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/app_color_black" />
+
+                <View
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent"
+                    android:background="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/drop_location_value"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="left|center"
+                    android:textStyle="bold"
+                    android:text=""
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/app_color_black" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimary" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="left|center"
+                    android:textStyle="bold"
+                    android:text="Type of Service"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/app_color_black" />
+
+                <View
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent"
+                    android:background="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/type_of_service_value"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="left|center"
+                    android:textStyle="bold"
+                    android:text=""
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/app_color_black" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimary" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="left|center"
+                    android:textStyle="bold"
+                    android:text="Booking Status"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/app_color_black" />
+
+                <View
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent"
+                    android:background="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/booking_status_value"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="left|center"
+                    android:textStyle="bold"
+                    android:text=""
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/app_color_black" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimary" />
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="left|center"
+                    android:textStyle="bold"
+                    android:text="Route Id"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/app_color_black" />
+
+                <View
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent"
+                    android:background="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/employee_id_value"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="left|center"
+                    android:textStyle="bold"
+                    android:text=""
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/app_color_black" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimary" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:textStyle="bold"
+                    android:gravity="left|center"
+                    android:text="Route Type"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/app_color_black" />
+
+                <View
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent"
+                    android:background="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/file_code_value"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:textStyle="bold"
+                    android:gravity="left|center"
+                    android:text=""
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/app_color_black" />
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimary" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:textStyle="bold"
+                    android:gravity="left|center"
+                    android:text="Car no"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/app_color_black" />
+
+                <View
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent"
+                    android:background="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/car_number"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:textStyle="bold"
+                    android:gravity="left|center"
+                    android:text=""
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/app_color_black" />
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimary" />
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="left|center"
+                    android:textStyle="bold"
+                    android:text="Payment Mode"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/app_color_black" />
+
+                <View
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent"
+                    android:background="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/payment_mode_value"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="left|center"
+                    android:textStyle="bold"
+                    android:text=""
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/app_color_black" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimary" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

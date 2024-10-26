@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <!--<group android:checkableBehavior="single">-->
+    <group>
+        <item
+            android:id="@+id/home_page"
+            android:icon="@null"
+            android:title="Home Page" />
+        <item
+            android:id="@+id/my_rides"
+            android:icon="@null"
+            android:title="My Rides" />
+        <item
+            android:id="@+id/add_booking"
+            android:icon="@null"
+            android:title="@string/add_booking" />
+        <item
+            android:id="@+id/menu_map"
+            android:icon="@null"
+            android:title="@string/draw_map" />
+        <item
+            android:id="@+id/menu_signature"
+            android:icon="@null"
+            android:title="@string/draw_signature" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/help"
+                android:icon="@null"
+                android:title="Help" />
+        </menu>
+
+    </item>
+    <item android:title="Settings">
+        <menu>
+            <item
+                android:id="@+id/logout"
+                android:icon="@null"
+                android:title="Logout" />
+        </menu>
+
+    </item>
+
+</menu>

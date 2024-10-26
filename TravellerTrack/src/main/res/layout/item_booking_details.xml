@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_booking_details_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/view_additional_info"
+        style="@style/text_medium"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:gravity="center"
+        android:background="@color/app_theme_color"
+        android:layout_weight="1" />
+
+    <!--<View
+        android:id="@+id/view_item_separator"
+        android:layout_width="fill_parent"
+        android:layout_height="3px"
+        android:background="@color/color_separator_line_background"
+        android:visibility="visible" />-->
+
+    <LinearLayout
+        android:id="@+id/ll_details_1"
+        android:layout_below="@id/view_additional_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/text_small"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dim_10dp"
+            android:layout_marginEnd="@dimen/dim_16dp"
+            android:layout_marginRight="@dimen/dim_16dp"
+            android:layout_marginStart="@dimen/dim_16dp"
+            android:layout_marginTop="@dimen/dim_16dp"
+            android:layout_weight="1"
+            android:text="Name: N/A" />
+
+        <TextView
+            android:id="@+id/tv_booking_id"
+            style="@style/text_small"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dim_10dp"
+            android:layout_marginEnd="@dimen/dim_16dp"
+            android:layout_marginRight="@dimen/dim_16dp"
+            android:layout_marginStart="@dimen/dim_16dp"
+            android:layout_marginTop="@dimen/dim_16dp"
+            android:layout_weight="1"
+            android:text="Booking Id:  N/A" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_drop_address"
+        style="@style/text_small"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_details_1"
+        android:layout_marginBottom="@dimen/dim_10dp"
+        android:layout_marginLeft="@dimen/dim_16dp"
+        android:text="Address: N/A" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_drop_address"
+        android:paddingBottom="10dp"
+        android:paddingLeft="@dimen/dim_16dp"
+        android:paddingRight="@dimen/dim_16dp"
+        android:paddingTop="5dp">
+
+        <Button
+            android:id="@+id/button1"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@color/blue"
+            android:text="@string/begin_trip"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/button2"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_weight="1"
+            android:background="@color/blue"
+            android:text="Feedback"
+            android:textAllCaps="false"
+            android:visibility="gone"
+            android:textColor="@color/white"
+             />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

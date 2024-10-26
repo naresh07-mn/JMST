@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff7302</color>
+    <color name="colorPrimaryDark">#ff7302</color>
+    <color name="colorAccent">#ffae6c</color>
+
+    <color name="color_status_bar">#E56701</color>
+    <color name="app_theme_color">#ffffae6c</color>
+    <color name="app_color_black">#333333</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="gray">#555555</color>
+    <color name="blue">#0422FA</color>
+    <color name="DarkWhite">#f0f0f0</color>
+    <color name="color_separator_line_background">#cccccc</color>
+    <color name="LighterWhite">#f0f0f0</color>
+
+    <color name="light_gray">#80000000</color>
+    <color name="status_bar">#ffffff</color>
+    <color name="color_app_text">#0f0f0f</color>
+    <color name="LightGray">#cccccc</color>
+    <color name="Red">#ff0000</color>
+</resources>
